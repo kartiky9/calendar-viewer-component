@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif, monospace;
+}
+
+/* write your CSS here */
+
+:root {
+    --primary-color: #716ccb;
+    --primary-accent: #716ccb6a;
+    --shadow: rgba(0, 0, 0, 0.373);
+    --font-color: #171D35;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.calendar {
+    width: 669px;
+    height: 631px;
+    border-radius: 20px;
+    background-color: #fff;
+    filter: drop-shadow(0px 7px 29px rgba(100, 100, 111, 0.2));
+}
+
+.month-nav {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.month {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--font-color);
+}
+
+.nav-arrows {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    z-index: 2;
+}
+
+button.nav-arrow {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-arrow.next-month img{
+    rotate: 180deg;
+}
+
+.weekdays {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-style: bold;
+}

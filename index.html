@@ -7,12 +7,14 @@
     <title>Calendar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body class="grid-container">
     <div class="calendar">
@@ -28,14 +30,15 @@
         </div>
       </div>
       <div class="weekdays">
-        <span>Mon</span>
-        <span>Tue</span>
-        <span>Wed</span>
-        <span>Thu</span>
-        <span>Fri</span>
-        <span>Sat</span>
-        <span>Sun</span>
+        <span class="weekday-span">Mon</span>
+        <span class="weekday-span">Tue</span>
+        <span class="weekday-span">Wed</span>
+        <span class="weekday-span">Thu</span>
+        <span class="weekday-span">Fri</span>
+        <span class="weekday-span">Sat</span>
+        <span class="weekday-span">Sun</span>
       </div>
+      <div class="days"></div>
     </div>
   </body>
 </html>

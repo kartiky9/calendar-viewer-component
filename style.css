@@ -66,3 +66,35 @@ button.nav-arrow {
     justify-content: space-between;
     font-style: bold;
 }
+
+.weekday-span {
+    width: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    column-gap: 33px;
+    row-gap: 50px;
+    padding: 60px;
+}
+
+.day-span {
+    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+.selected-day {
+    content: '';
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
